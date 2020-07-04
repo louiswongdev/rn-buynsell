@@ -38,6 +38,7 @@ function ListingsScreen({ navigation }) {
             onPress={() => navigation.navigate(routes.LISTING_DETAILS, item)}
           />
         )}
+        showsVerticalScrollIndicator={false}
       />
     </Screen>
   );
@@ -45,7 +46,10 @@ function ListingsScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   screen: {
-    padding: 20,
+    paddingTop: 20,
+    paddingRight: 20,
+    paddingBottom: 0,
+    paddingLeft: 20,
     backgroundColor: colors.light,
   },
 });
