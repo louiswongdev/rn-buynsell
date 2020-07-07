@@ -28,6 +28,7 @@ function LoginScreen() {
     setLoginFailed(false);
 
     // login from server successful. Now set local user authToken
+    // result.data contains jwt token
     auth.login(result.data);
   };
 
