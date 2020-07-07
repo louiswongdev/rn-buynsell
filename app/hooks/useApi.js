@@ -10,13 +10,10 @@ export default useApi = apiFunc => {
     const response = await apiFunc(...args);
     setLoading(false);
 
-    // error returned from apisauce
-    if (!response.ok) return setError(true);
-
-    // no errors
-    setError(false);
-    // set listings data to state
+    // response.ok --> error returned from apisauce
+    setError(!response.ok);
     setData(response.data);
+    return response;
   };
 
   return {
