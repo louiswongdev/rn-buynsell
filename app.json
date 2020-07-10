@@ -23,6 +23,9 @@
       "favicon": "./assets/favicon.png"
     },
     "description": "A marketplace to sell things and connect with potential buyers",
-    "githubUrl": "https://github.com/codeandfly/rn-buynsell"
+    "githubUrl": "https://github.com/codeandfly/rn-buynsell",
+    "notification": {
+      "iosDisplayInForeground": true
+    }
   }
 }
